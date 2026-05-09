@@ -25,3 +25,37 @@ src/**/*.js.map
 
 # MCP servers configuration
 .mcp.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+credentials*
+service-account*.json
+
+# Wallet / keystore
+wallets/
+keystore/
+*.wallet
+
+# Backup and swap files
+*.bak
+*.backup
+*.orig
+*.swp
+*~
+
+# Windows
+Thumbs.db
+
+# Docker overrides (may contain local secrets)
+docker-compose.override.yml
