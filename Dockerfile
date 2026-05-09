@@ -1,5 +1,5 @@
 # Set the base image
-FROM node:20-bookworm-slim
+FROM node:22-bookworm-slim
 
 # WORKDIR /usr/src/app/
 WORKDIR /home/gateway
