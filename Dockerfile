@@ -16,8 +16,8 @@ RUN mkdir -p    /home/gateway/conf \
                 /home/gateway/logs \
                 /home/gateway/certs
 
-# Install pnpm
-RUN npm install -g pnpm@latest
+# Enable corepack for pnpm
+RUN corepack enable && corepack prepare pnpm@9 --activate
 
 # Copy package files first
 COPY package.json pnpm-lock.yaml ./
